@@ -1,8 +1,8 @@
-pool:
-  vmImage: ubuntu-latest
+# pool:
+#   vmImage: ubuntu-latest
 
-steps:
+# steps:
 
-- script: |
-    echo Hola Mundo
-  displayName: 'Build'
+# - script: |
+#     echo Hola Mundo
+#   displayName: 'Build'
