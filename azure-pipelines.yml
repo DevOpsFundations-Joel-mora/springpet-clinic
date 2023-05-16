@@ -9,7 +9,6 @@ steps:
     organization: 'devopsfundations-joel-mora'
     projectKey: 'DevOpsFundations-Joel-mora_springpet-clinic'
     projectName: 'springpet-clinic'
-    scannerMode: 'Other'
   displayName: 'Sonar Cloud Prerare'
 
 - task: Gradle@3
