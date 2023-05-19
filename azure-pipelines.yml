@@ -59,19 +59,11 @@ jobs:
   pool: 'default'
   steps:
     - 
-#- task: Kubernetes@1
-#  inputs:
-#    connectionType: 'None'
-#    command: 'create'
-#    arguments: 'deployment splingclinic --image=joeljmora/petclinic:latest'
-#    secretType: 'dockerRegistry'
-#    containerRegistryType: 'Azure Container Registry'
-
-  - task: Kubernetes@1
-    inputs:
-      connectionType: 'None'
-      command: 'create'
-      useConfigurationFile: true
-      configuration: './kubernetes/deployment-app.yaml'
-      secretType: 'dockerRegistry'
-      containerRegistryType: 'Azure Container Registry'
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'None'
+    command: 'create'
+    useConfigurationFile: true
+    configuration: './kubernetes/deployment-app.yaml'
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry'
