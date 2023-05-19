@@ -57,13 +57,12 @@ jobs:
   
 - job:
   pool: 'default'
-  steps:
-    - 
-- task: Kubernetes@1
-  inputs:
-    connectionType: 'None'
-    command: 'create'
-    useConfigurationFile: true
-    configuration: './kubernetes/deployment-app.yaml'
-    secretType: 'dockerRegistry'
-    containerRegistryType: 'Azure Container Registry'
+  steps: 
+  - task: Kubernetes@1
+    inputs:
+      connectionType: 'None'
+      command: 'create'
+      useConfigurationFile: true
+      configuration: './kubernetes/deployment-app.yaml'
+      secretType: 'dockerRegistry'
+      containerRegistryType: 'Azure Container Registry'
